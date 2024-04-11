@@ -1,0 +1,53 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             Int         @id @default(autoincrement())
+  email          String      @unique
+  felhasznalonev String
+  szulev         String
+  telszam        String
+  jelszo         String
+  kedvencek      Kedvencek[]
+  kritikak       Kritika[]
+
+  @@map("users")
+}
+
+model Kedvencek {
+  id            Int         @id @default(autoincrement())
+  felhasznaloId Int
+  musorId       Int
+  felhasznalo   User @relation(fields: [felhasznaloId], references: [id])
+  musor         Musor       @relation(fields: [musorId], references: [id])
+}
+
+model Musor {
+  id          Int         @id @default(autoincrement())
+  nev         String
+  kiadas      DateTime    
+  kategoria   String
+  leiras      String
+  kep         String
+  kedvencek   Kedvencek[]
+  kritikak    Kritika[]
+}
+
+model Kritika {
+  id            Int         @id @default(autoincrement())
+  felhasznaloId Int
+  musorId       Int
+  tartalma      String
+  ertekeles     Int
+  Felhasznalo   User @relation(fields: [felhasznaloId], references: [id])
+  Musor         Musor       @relation(fields: [musorId], references: [id])
+}

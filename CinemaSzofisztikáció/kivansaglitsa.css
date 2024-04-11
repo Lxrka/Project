@@ -1,0 +1,297 @@
+* {
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    margin: 0%;
+    padding: 0;
+    cursor: url('data:image/x-icon;base64,AAACAAEAICAAAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAADAAAABUAAAAlAAAALwAAADgAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAOAAAADgAAAA4AAAAOAAAAC8AAAAfAAAAEgAAAAAAAAAAAAAAAwAAAAwAAAAfAAAALwAAAD8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAA/wAAAP8AAAD/AAAATAAAAEwAAABMAAAARQAAADUAAAAqAAAAAAAAAAAAAAAKAAAAHAAAADUAAAD/AAAA/5jau/+N4rP/juCx/4rhsf+I4q//h+Gv/4/grP+P4K3/jOCs/4zhrf+N3qr/keKu/47hrf+J47D/iOKv/43hsv+Q37D/jd+3/5nZuP8AAAD/AAAA/wAAAFMAAABRAAAASAAAAEIAAAAAAAAAAwAAABUAAAD/AAAA/4firv+L5a7/huCy/4netf+G4bD/ieCw/4nirf+J4q3/juCu/47grv+H4q7/huKu/4vhrv+O4K7/jeGu/4nirf+J4q3/iOGw/4vgsP+I4q7/hOGw/47jsP+Bv43/AAAA/wAAAFQAAABRAAAAUAAAAAAAAAAJAAAA/5Dfr/+J37P/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/jeCw/4nltP+AvZH/AAAA/wAAAFQAAABUAAAAAAAAAP+f5rr/it23/47jqv+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+J4LD/j9+w/47dsP+K4LD/AwUD/wAAAFUAAAAAAAAA/4ngsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/i+Cw/5jhr/8AAAD/AAAAVQAAAP+d1bT/ieGv/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/jOCs/4u8ff8AAAD/AAAA/4retP+J4bD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+N4rL/irmM/wEIAP8AAAD/fuKw/4rhr/+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4nerv+Gton/GyMY/wAAAP+G4q//iOGw/4rgsP+L4a//ht+z/4vTnP8AAAD/hrCX/4firP+N4K//iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+L4LD/huOq/wAAAP8AAAD/lOGy/4rgsP+K4LD/iuCw/4rgsP+G4bD/g9+u/4e1iP8ZIRb/AAAA/4bir/+I4bD/iuCw/4ngsP+X0qL/AAAA/3/osP8AAAD/juCz/4zhrv+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4vgr/8AAAD/tdbA/4jZtv8AAAD/id+v/4rgsP+K4LD/iuCw/4bhsP+G4bD/irmL/wEIAP8AAAD/juGu/5Lfsf+G367/jeCw/w4WBf+L46v/hd63/wAAAP+J36//iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCx/wAAAP+H46//h+Gw/5jpuv8AAAD/h+Or/4rgsP+K4LD/ieGw/4fjrv9/u3z/AAAA/wAAAP+b4rX/iOCx/4jgsP8AAAD/md20/47hrP+P4K//AAAA/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rgsP+K4LD/iuCw/4rg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AP9/xab/id+x/4Thr/+Q363/krGO/wAAAP8AAAAVAAAADAAAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAA/wAAAP8AAAD/AAAA/wAAAAgAAAAGAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP8AAAD/AAAA/wAAAP8AAAD/AAAACAAAAAYAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAABAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAAAAEAAAABAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//////4AAD/4AAAP4AAAB8AAAAOAAAABgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAABgAAAAYAAAAHAAAADwAAAA+AAAAfgAAAH8AAAB/AAAAfwAAAH8AAAB/AAAA/4B+AP/AfwH/4P+D////////////////8='), auto;
+}
+
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    background-image: url(./pictures/skyy.jpg);
+
+
+}
+
+.cim {
+    color: bisque;
+    margin-left: 500px;
+
+
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #161A30;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: wheat;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #B6BBC4;
+    color: black;
+}
+
+.topnav a.active {
+    background-color: #B6BBC4;
+    color: black;
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #F0ECE5;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: #F0ECE5;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .search-container {
+        float: none;
+
+    }
+
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text] {
+        border: 1px solid #B6BBC4;
+    }
+}
+
+@media screen and (max-width:600) {
+
+    .teteje,
+    .tartalomjegyzek {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        padding: 14px;
+
+
+    }
+
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card {
+    position: relative;
+    width: 325px;
+    height: 450px;
+    background: #000;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.poster {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.poster::before {
+    content: "";
+    position: absolute;
+    bottom: -45%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.card:hover .poster::before {
+    bottom: 0;
+}
+
+.poster img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.card:hover .poster img {
+    transform: scale(1.1);
+}
+
+.details {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 1.5em 1.5em 2em;
+    background: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+    transition: 0.3s;
+    color: #fff;
+    z-index: 2;
+}
+
+.card:hover .details {
+    bottom: 0;
+}
+
+.details h1,
+.details h2 {
+    font-weight: 700;
+}
+
+.details h1 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.details h2 {
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 10px;
+    opacity: 0.6;
+}
+
+.details .rating {
+    position: relative;
+    margin-bottom: 15px;
+    display: flex;
+    gap: 0.25em;
+}
+
+.details .rating i {
+    color: #e3c414;
+}
+
+.details .rating span {
+    margin-left: 0.25em;
+}
+
+.details .tags {
+    display: flex;
+    gap: 0.375em;
+    margin-bottom: 0.875em;
+    font-size: 0.85em;
+}
+
+.details .tags span {
+    padding: 0.35rem 0.65rem;
+    color: #fff;
+    border: 1.5px solid rgba(255 255 255 / 0.4);
+    border-radius: 4px;
+    border-radius: 50px;
+}
+
+.details .desc {
+    color: #fff;
+    opacity: 0.8;
+    line-height: 1.5;
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.details .cast h3 {
+    margin-bottom: 0.5em;
+}
+
+.details .cast ul {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+    width: 100%;
+}
+
+.details .cast ul li {
+    list-style: none;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1.5px solid #fff;
+}
+
+.details .cast ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+.kivamsaglistaGomb {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    color: #161A30;
+    background-color: wheat;
+}
+
+.video {
+    overflow: auto;
+    white-space: nowrap;
+    display: flex;
+    margin-left: 350px;
+    margin-top: 100px;
+    height: 500px;
+
+}

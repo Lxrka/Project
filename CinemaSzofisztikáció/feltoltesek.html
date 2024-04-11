@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="feltoltesek.css">
+    <link rel="website icon" type="png" href="./icons/record.png">
+    </link>
+    <script defer src="feltoltesek.js"></script>
+    <title>Feltoltesek</title>
+</head>
+
+<body>
+    <div class="topnav">
+        <a href="./main.html">F Ő O L D A L</a>
+        <a href="./sorozatok.html">S O R O Z A T O K</a>
+        <a href="./filmek.html">F I L M E K</a>
+        <a href="./mesek.html"> M E S É K </a>
+        <a href="./kivansaglista.html">K I V Á N S Á G L I S T A</a>
+        
+        <a class="active" href="./feltoltesek.html">F E L T Ö L T É S</a>
+        
+        </form>
+    </div>
+    </div>
+    </div>
+    <section>
+        <div class="gap">
+            <div id="root">
+                    <form id="upload" class="registration-form">
+                        <h1>Név</h1> <input type="text" id="nev" name="nev">
+                        <h1>Kiadás</h1> <input type="date" id="keletkezes" name="keletkezes">
+                        <h1>Kategoriák</h1>
+                    <select id="kategoria">
+                        <option value="film">
+                            Film
+                        </option>
+                        <option value="mese">
+                            Mese
+                        </option>
+                        <option value="sorozat">
+                            Sorozat
+                        </option>
+                    </select>
+                        <h1>Leirás</h1><textarea id="leiras" name="leiras"></textarea>
+                        <h1>Kritika</h1><textarea id="kritika" name="kritika"></textarea>
+                        <h1>Értékelés</h1><input type="number" id="ertekeles" name="ertekeles"></input>
+                        <h1>Kép</h1><input type="file" id="kep" name="kep">
+                        <input id="feltoltesButton" type="submit">
+                </form>
+            </div>
+    </section>
+</body>
+
+</html>

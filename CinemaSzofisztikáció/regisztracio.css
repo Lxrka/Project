@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    cursor: url('data:image/x-icon;base64,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tiNAB6MBQAejAUAHowFAB6MBQAejAUAHowFAB6MBQAejAUAHowEAAAAAAAAAALWV6//RuPr/AAAAAEAHowFAB6MBQAejAUAHowFAB6MBQAejAUAHowFAB6MBQAejAU0Xr/9BCKT9QAejAUAHowFAB6MBQAejAQAAAABqNbv+QAej/0AHowFAB6MBQAejAUAHowFAB6MBQAejAUAHowFAB6MBQAejAQAAAAAAAAAAoXfh/7WV6//RuPr/QAejAUAHowFAB6MBQAejAUAHowFAB6MBQAejAUAHowFAB6MBQAej/0UNpuVAB6MBQAejAUAHowFAB6MBQAejAWIuu/9AB6P8QAejAUAHowFAB6MBQAejAUAHowFAB6MBQAejAUAHowFAB6MCAAAAAAAAAABAB6P/oXfh/7WV6//RuPr/QAejAUAHowFAB6MBQAejAUAHowFAB6MBAAAAAEAHowFqPrdrQAej/0AHowFAB6MBQAejAUAHowFAB6MBQAej/0AHowFAB6MCQAejAkAHowFAB6MBQAejAkAHowJAB6MCQAejAkAHowIAAAAAAAAAAEAHo/9AB6P/oXfh/7WV6//RuPr/QAejAkAHowJAB6MCQAejAUAHowFAB6MBQAejAUAHowJAB6PjQAejAkAHowJAB6MCQAejAkAHowJAB6MoQAejAkAHowLKuuUBQAejAkAHowJAB6MCQAejAkAHowJAB6MChVXZAwAAAAAAAAAA//////8D4H//AAB//gAAP/4AAD//AAB//wAAf/+AAP//4AP/+DAGD/AwBg/wMA4H8DgOB/A+PgfwP/4H8CHCB/gBwA/4QIEP/MCBn/+Agf/8gICf/ICBn/7Agb/+wIG//8CB///hw///4ef/f////z/z5/8f8+f/D/vv/wf7//8='), auto;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url("./pictures/kazetta.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+}
+
+section {
+    position: relative;
+    max-width: 400px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(55px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 3rem;
+
+}
+
+h1 {
+    font-size: 50px;
+    color: #994D1C;
+    text-align: center;
+
+}
+
+.inputBox {
+    position: relative;
+    margin: 30px 0;
+    max-width: 310px;
+    border-bottom: 2px solid black;
+}
+
+.inputBox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #E48F45;
+    font-size: 10px;
+    pointer-events: none;
+    transition: all 0.5 ease-in-out;
+}
+
+input:focus~label,
+input:focus~label {
+    top: -5px;
+}
+
+.inputBox input {
+
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 0 35px 0 35px;
+    color: wheat;
+}
+
+.password2 {
+    margin: 35px 0;
+    font-size: large;
+    color: wheat;
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+}
+
+.password2 label {
+    display: flex;
+    align-items: center;
+
+}
+
+.password2 label input {
+
+    margin-right: 3px;
+}
+
+.password2 a {
+    color: wheat;
+    text-decoration: none;
+    font-weight: 600;
+
+}
+
+.password2 a:hover {
+    text-decoration: underline;
+}
+
+button {
+    width: 300px;
+    height: 50px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 600;
+    transition: all 0.4 ease;
+
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.register {
+    font-size: larger;
+    color: wheat;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: wheat;
+    font-weight: 600;
+}
+
+.register p a :hover {
+    text-decoration: underline;
+}
